@@ -84,10 +84,138 @@
         </article>
         </div>
     </section>
+<!-- second section -->
+ <div class="Homethird expanded" id="target2" data-magellan-target="test2">
+      <article class="artRigth">
+        <article class="artRigth" data-aos="fade-right" data-aos-offset="350" data-aos-duration="600">
+          <img class="ToPres" src="~/assets/images/border.png" alt="ligne rouge entéte de div ">
+          <h2 class="TopTitle">WHAT IS<br> <span class="red">PALMYRA ?</span></h2>
+        </article>
+      </article>
+      <div class="artLeft">
+
+        <div class="CanvasContainer" data-aos="fade-right" data-aos-offset="350" data-aos-duration="600">
+          <h3 class="red"><strong>A Methodology</strong></h3>
+          <p><span class="red"><i class="fas fa-circle"></i></span> Agile<span class="toLeft">65.9%</span></p>
+          <p><span class="pink"><i class="fas fa-circle"></i></span> Business analysis<span class="toLeft">65.9%</span></p>
+          <p><span class="grey"><i class="fas fa-circle"></i></span> Development<span class="toLeft">65.9%</span></p>
+          <div class="firstPerc">
+            <svg width="200px" height="200px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="#ff4d5a"
+                  stroke-width="0.5" stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
+
+          <div class="SecPerc">
+            <svg width="150px" height="150px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="#fbd4db"
+                  stroke-width="0.5" stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
+
+          <div class="thirdPerc">
+            <svg width="100px" height="100px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="grey" stroke-width="0.5"
+                  stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
+
+        </div>
+        <!-- 2eme circle -->
+        <div class="CanvasContainer" id="SecOntain" data-aos="fade-left" data-aos-offset="350" data-aos-duration="600">
+          <h3 class="red"><strong>A STORE OF COMPONENTS</strong></h3>
+          <p><span class="red"><i class="fas fa-circle"></i></span> Business <span class="toLeft">65.9%</span></p>
+          <p><span class="pink"><i class="fas fa-circle"></i></span> Tecnical<span class="toLeft">57.6%</span></p>
+          <p><span class="grey"><i class="fas fa-circle"></i></span> Graphical<span class="toLeft">50.1%</span></p>
+          <p><span class="Light-grey"><i class="fas fa-circle"></i></span> Transverse<span class="toLeft">75.1%</span></p>
+          <div class="firstPerc">
+            <svg width="200px" height="200px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="#ff4d5a"
+                  stroke-width="0.5" stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
+
+          <div class="SecPerc">
+            <svg width="150px" height="150px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="#fbd4db"
+                  stroke-width="0.5" stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
+
+          <div class="thirdPerc">
+            <svg width="100px" height="100px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="grey" stroke-width="0.5"
+                  stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
+
+          <div class="LastPerc">
+            <svg width="50px" height="50px" viewBox="0 0 36 36" class="donut">
+              <circle class="donut-ring" cx="18" cy="18" r="15.87" fill="transparent" stroke="transparent" stroke-width="1"></circle>
+              <switch>
+                <circle class="donut-segment" cx="18" cy="18" r="15.87" fill="transparent" stroke="#eee" stroke-width="1"
+                  stroke-dashoffset="25"></circle>
+                <foreignObject>
+
+                </foreignObject>
+              </switch>
+            </svg>
+          </div>
 
 
 
- <!-- end of page -->
+        </div>
+
+
+        <!-- 2eme circle end -->
+
+
+
+        </div>
+
+
+      </div>
+
+
+        <!-- section suivante  -->
+         <!-- end of page -->
+    </div>
   </div>
 
 </template>
