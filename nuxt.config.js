@@ -16,7 +16,12 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href:'https://use.fontawesome.com/releases/v5.3.1/css/all.css' },
-    ]
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
+      { src: '/js/customjs.js' },
+
+    ],
   },
 
   /*
@@ -31,11 +36,7 @@ module.exports = {
     'bulma/css/bulma.css',
     '~/css/main.css',
   ],
-  script: [
-    { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
-    { src: '/js/customjs.js' },
 
-  ],
   /*
   ** Plugins to load before mounting the App
   */
