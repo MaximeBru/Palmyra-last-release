@@ -1,6 +1,7 @@
 <template>
   <div class="content">
 
+ <!-- =================================================================== -->
 
       <header class="img-box">
       <div class="OpacFull">
@@ -380,6 +381,6 @@
 </section>
          <!-- end of page -->
     </div>
-  </div>
+
 
 </template>

@@ -18,7 +18,7 @@ module.exports = {
       { rel: 'stylesheet', href:'https://use.fontawesome.com/releases/v5.3.1/css/all.css' },
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'},
       { src: '/js/customjs.js' },
 
     ],
@@ -34,6 +34,7 @@ module.exports = {
   */
   css: [
     'bulma/css/bulma.css',
+    '~/css/foundation.css',
     '~/css/main.css',
   ],
 
