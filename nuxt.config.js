@@ -19,6 +19,7 @@ module.exports = {
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'},
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js'},
       { src: '/js/customjs.js' },
 
     ],
