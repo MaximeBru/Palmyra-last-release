@@ -3,7 +3,7 @@
 
  <!-- =================================================================== -->
 
-    <header>
+    <header  class="img-box">
 
       <div class="OpacFull">
         <div class="PalmyraHead" data-aos="fade-right" data-aos-duration="1500">
@@ -16,9 +16,6 @@
         </div>
         <div class="scroll"></div>
       </div>
-
-
-
     </header>
 
         <section id="target1" class="HomeSec expanded" data-magellan-target="test1">
