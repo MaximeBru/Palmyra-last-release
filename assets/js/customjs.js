@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    $(document).foundation();
+
         // Collapse responsive-menu after clicking link when on responsive mode:
     // http://stackoverflow.com/questions/18516696/how-can-i-close-the-foundation-topbar-menu-when-a-link-is-clicked
     // http://foundation.zurb.com/sites/docs/media-queries.html
