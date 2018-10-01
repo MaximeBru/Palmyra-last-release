@@ -23,8 +23,9 @@ module.exports = {
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'},
       { src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'},
 /*       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js'}, */
-    /*   { src: '/js/jssor.slider.min.js' }, */
-     /*  { src: '/js/docs.js' }, */
+      { src: '/js/jssor.slider.min.js' },
+      { src: '/js/docs.js' },
+      { src: '/js/slider.js' },
       { src: '/js/customjs.js' },
     ],
   },

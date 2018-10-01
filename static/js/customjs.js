@@ -336,3 +336,8 @@ $(document).ready(function() {
    animatedBottomLineNavigation();
    updateAnimatedBottomLinePosition();
  });
+
+
+
+ /* slider */
+
