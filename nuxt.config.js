@@ -16,12 +16,15 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href:'https://use.fontawesome.com/releases/v5.3.1/css/all.css' },
+/*       { rel: 'stylesheet', href:'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' }, */
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'},
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js'},
+/*       { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'},
+      { src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'}, */
+   /*    { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js'}, */
+/*       { src: '/js/slider.js' }, */
       { src: '/js/customjs.js' },
-
     ],
   },
 
@@ -35,7 +38,7 @@ module.exports = {
   */
   css: [
     'bulma/css/bulma.css',
-    '~/css/foundation.css',
+/*     '~/css/foundation.css', */
     '~/css/main.css',
   ],
 
@@ -55,6 +58,7 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
+    '@bootstrap-vue/nuxt',
 
   ],
   /*
@@ -90,4 +94,4 @@ module.exports = {
       }
     }
   }
-}
+};

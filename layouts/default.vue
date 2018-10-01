@@ -23,7 +23,7 @@
                       <nuxt-link to="/about" data-parent-menu="About" href="#">About</nuxt-link>
                     </li>
                     <li>
-                      <a data-parent-menu="Company" href="#">Product</a>
+                      <a data-parent-menu="Company" href="#">Solution</a>
                     </li>
                     <li>
                       <a data-parent-menu="Categories" href="#">Blog</a>

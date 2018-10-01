@@ -228,11 +228,14 @@ hr {
   background-color: rgba(0, 0, 0, 0)
 }
 .PalmyraHead{
-  height: 30%;
+  height: 21rem;
   background-color: white;
-  width: 72.8%;
+  width:100rem;
   position: absolute;
   top: 44%;
+  opacity: 1;
+  /* transform: none; */
+  margin-left: -9.2rem;
 }
 .PalmyraHead img{
   width: 40%;
@@ -1491,3 +1494,166 @@ top: 23rem;
 
 
 /* end footer */
+/* ============slider============ */
+.container {
+  width: 100%;
+ margin: 0;
+ max-width: none;
+ padding: 0;
+}
+#content-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: .3rem 3.8rem;
+}
+
+#box-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#carousellABM {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+#carousellABM img {
+  max-width: 100%;
+  height: auto;
+}
+
+#foreground {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin: 0 auto;
+ /*  background-image:url("../images/PalmBackground.jpg"); */
+  z-index: 2;
+}
+
+.paph-wrapper, .paph-wrapper1, .paph-wrapper2 {
+  position: absolute;
+  max-width: 380px;
+  max-height: 260px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+}
+
+.paph-wrapper1 .small-path {
+  top: 245px;
+  left: 30px;
+}
+
+.paph-wrapper2 .small-path {
+  top: 230px;
+  left: 210px;
+}
+
+#text {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0px 50px;
+  color: #fff;
+  opacity: 1;
+}
+#text h2 {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  margin: 1rem 0;
+}
+#text p {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  margin: 1rem 0;
+}
+#text .icon-line {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: red;
+}
+
+.small-path {
+  top: 10px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #0072bb;
+  opacity: 1;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.path {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 260px;
+  height: 260px;
+  background: #0072bb;
+  opacity: 0.2;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+}
+.carousel-indicators li.active {
+  background-color: #0070c0;
+}
+
+#carousellABM img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: black;
+}
