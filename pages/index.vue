@@ -448,3 +448,14 @@
 
 
 </template>
+<script>
+export default {
+  head () {
+    return {
+      script: [
+        { src: '/js/slider.js' }
+      ],
+    }
+  }
+}
+</script>

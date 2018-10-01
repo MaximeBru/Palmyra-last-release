@@ -25,7 +25,7 @@ module.exports = {
 /*       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js'}, */
       { src: '/js/jssor.slider.min.js' },
       { src: '/js/docs.js' },
-      { src: '/js/slider.js' },
+     /*  { src: '/js/slider.js' }, */
       { src: '/js/customjs.js' },
     ],
   },
@@ -61,13 +61,13 @@ module.exports = {
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
     'bootstrap-vue/nuxt',
-
   ],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+
   },
 
   /*
