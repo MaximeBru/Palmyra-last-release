@@ -230,12 +230,12 @@ hr {
 .PalmyraHead{
   height: 21rem;
   background-color: white;
-  width:100rem;
+  width: 100rem;
   position: absolute;
-  top: 44%;
+  top: 20%;
   opacity: 1;
   /* transform: none; */
-  margin-left: -9.2rem;
+  /* margin-left: -9.2rem; */
 }
 .PalmyraHead img{
   width: 40%;

@@ -12,7 +12,22 @@
             <!-- Slides Container -->
             <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
                 <div>
-                    <img data-u="image" src="~/assets/images/001.jpg" />
+
+                  <div class="img-box">
+        <div class="OpacFull">
+        <div class="PalmyraHead" data-aos="fade-right" data-aos-duration="1500">
+          <div class="conteneur">
+            <img src="~/assets/images/Logo-Palmyra1.jpg" alt="Logo Palmyra">
+
+            <h1><span class="red"> PALMYRA</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+            <div class="triangle"></div>
+          </div>
+        </div>
+  <!--       <div class="scroll"></div> -->
+      </div>
+      </div>
+
+      <!-- ============= -->
                 </div>
                 <div>
                     <img data-u="image" src="~/assets/images/002.jpg" />
@@ -63,23 +78,6 @@
             <!--#endregion Arrow Navigator Skin End -->
         </div>
         <!-- Jssor Slider End -->
-
-
-
-    <header  class="img-box">
-
-      <div class="OpacFull">
-        <div class="PalmyraHead" data-aos="fade-right" data-aos-duration="1500">
-          <div class="conteneur">
-            <img src="~/assets/images/Logo-Palmyra1.jpg" alt="Logo Palmyra">
-
-            <h1><span class="red"> PALMYRA</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-            <div class="triangle"></div>
-          </div>
-        </div>
-        <div class="scroll"></div>
-      </div>
-    </header>
 
         <section id="target1" class="HomeSec expanded" data-magellan-target="test1">
       <div class="row">
