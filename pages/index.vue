@@ -81,8 +81,10 @@
 
         <section id="target1" class="HomeSec expanded" data-magellan-target="test1">
       <div class="row">
-        <article class="artRigth" data-aos="fade-right" data-aos-offset="350" data-aos-duration="600">
-          <img class="ToPres" src="~/assets/images/palmCorp.jpg" alt="entéte de section">
+        <article class="artRigth" id="PalmImgRight" data-aos="fade-right" data-aos-offset="350" data-aos-duration="600">
+          <img class="ToPres" src="~/assets/images/palmImgRight.png" alt="entéte de section">
+          <img class="ToPresBorder" src="~/assets/images/border.png" alt="ligne rouge entéte de section ">
+          <h2 class="TopTitleImg">WHAT IS<br> <span class="red">PALMYRA ?</span></h2>
         </article>
         <article class="DescIntro" data-aos="fade-left" data-aos-offset="350" data-aos-duration="600">
           <p><span class="red">/ </span>Built in Java, It integrates many market frameworks. It allows a developer to
