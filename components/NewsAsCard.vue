@@ -1,15 +1,15 @@
 <template>
-  <nuxt-link :to="'/recipes/' + recipe.id">
+  <nuxt-link :to="'/News/' + News.id">
     <BulmaCard>
-      <div slot="image" v-if="recipe.image" class="">
+      <div slot="image" v-if="News.image" class="">
         <figure class="image is-3by2">
-          <img class="lazy-img-fadein" v-lazy="recipe.image.thumbnail.url" />
+          <img class="lazy-img-fadein" v-lazy="News.image.thumbnail.url" />
         </figure>
       </div>
       <div slot="content" class="has-text-centered">
-        <Difficulty class="difficulty" :difficulty="recipe.difficulty" />
+        <Difficulty class="difficulty" :difficulty="News.difficulty" />
         <div class="description">
-          <h3 class="title is-5">{{ recipe.title }}</h3>
+          <h3 class="title is-5">{{ News.title }}</h3>
         </div>
       </div>
     </BulmaCard>
@@ -22,7 +22,7 @@ import Difficulty from '~/components/Difficulty'
 export default {
   components: { BulmaCard, Difficulty },
   props: {
-    recipe: { type: Object, default: () => [] }
+    News: { type: Object, default: () => [] }
   }
 }
 </script>
@@ -33,7 +33,7 @@ export default {
   overflow: hidden;
 }
 .image.is-square {
-  background-color:whitesmoke
+  background-color: whitesmoke;
 }
 .card:hover {
   transition: all 0.2s ease-in-out;
@@ -44,12 +44,12 @@ export default {
   height: 100%;
   position: relative;
   transition: all 0.3s ease-in-out;
-  top: 0
+  top: 0;
 }
 .card .description {
-  font-style: italic
+  font-style: italic;
 }
-.recipes .card .difficulty {
+.Newss .card .difficulty {
   margin-bottom: 10px;
 }
 </style>

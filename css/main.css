@@ -258,7 +258,7 @@ hr {
   border-bottom-width: 209px;
   border-top-width: 0px;
   border-left: 163px solid white;
-  margin-left: 100%;
+  margin-left: 99.9%;
 }
 .artRigth {
   display: inline-block;
@@ -454,7 +454,7 @@ hr {
 
 .igFrameBar:before {
   content: '';
-  width: 74%;
+  width: 114%;
   height: 1px;
   background: grey;
   position: absolute;
@@ -855,9 +855,9 @@ tr:first-child th:last-child {
 }
 
 #BenefBotImg {
-  margin-top: -3rem;
-  margin-right: 2rem;
+  margin-bottom: -2.5rem;
 }
+
 #lastPalmyra {
   position: absolute;
   right: 4rem;
