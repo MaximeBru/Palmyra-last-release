@@ -147,6 +147,65 @@
         </article>
         </div>
     </section>
+ <!-- ======news part====== -->
+<section class="SecNews">
+      <h2 class="NewsTilte">En Savoir Plus Sur Vermeg</h2>
+      <figure class="snip1208">
+        <img src="~/assets/images/brainTech.jpg" alt="sample66" />
+        <div class="date"><span class="day">28</span><span class="month">Oct</span></div><i class="ion-bookmark"></i>
+        <figcaption>
+          <h3>The World Ended Yesterday</h3>
+          <p>
+            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to
+            me anyway.
+          </p>
+          <button>Read More</button>
+        </figcaption><a href="#"></a>
+      </figure>
+      <figure class="snip1208 ">
+        <img src="~/assets/images/boardroom-meeting-flatlay.jpg" alt="sample9" />
+        <div class="date"><span class="day">17</span><span class="month">Nov</span></div><i class="ion-cloud">
+        </i>
+        <figcaption>
+          <h3>An Abstract Post Heading</h3>
+          <p>
+            Sometimes the surest sign that intelligent life exists elsewhere in the universe is that none of it has
+            tried to contact us.
+          </p>
+          <button>Read More</button>
+        </figcaption><a href="#"></a>
+      </figure>
+      <figure class="snip1208">
+        <img src="~/assets/images/internet-security.jpg" alt="sample6" />
+        <div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
+        <figcaption>
+          <h3>Down with this sort of thing</h3>
+          <p>
+            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to
+            me anyway.
+          </p>
+          <button>Read More</button>
+        </figcaption><a href="#"></a>
+      </figure>
+      <figure class="snip1208">
+        <img src="~/assets/images/creative-brain-storm.jpg" alt="sample6" />
+        <div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
+        <figcaption>
+          <h3>Down with this sort of thing</h3>
+          <p>
+            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to
+            me anyway.
+          </p>
+          <button>Read More</button>
+        </figcaption><a href="#"></a>
+      </figure>
+      <div class="arrow-container">
+        <a href="#">
+          <p>View All<i class="fas fa-angle-right arrow-right"></i></p>
+        </a>
+      </div>
+    </section>
+
 <!-- second section -->
  <div class="Homethird expanded" id="target2" data-magellan-target="test2">
       <article class="artRigth">
@@ -450,11 +509,9 @@
 </template>
 <script>
 export default {
-  head () {
+  head() {
     return {
-      script: [
-        { src: '/js/slider.js' }
-      ],
+      script: [{ src: '/js/slider.js' }]
     }
   }
 }
