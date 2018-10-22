@@ -22,12 +22,12 @@ const mutations = {
   reset(state) {
     state.count = 0
   },
-  get_info(state, data) {
-    state.info = infos
-  },
 
   get_infos(state, data) {
     state.infos = data
+  },
+  setCurrentinfo: (state, info) => {
+    state.info = info
   }
 }
 
