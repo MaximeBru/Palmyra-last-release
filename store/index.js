@@ -22,6 +22,9 @@ const mutations = {
   reset(state) {
     state.count = 0
   },
+  get_info(state, data) {
+    state.info = info
+  },
 
   get_infos(state, data) {
     state.infos = data

@@ -1,11 +1,11 @@
 <template>
     <section class="section">
         <div class="container">
-
+          <div v-for="info in info" :key="info.id">
             <h3>{{info.title }}</h3>
             <p>{{info.description || 'No description provided.' }}</p>
 
-
+</div>
 
         </div>
     </section>
@@ -24,23 +24,21 @@ export default {
     const res = await axios(
       'http://localhost:1337/infos/' + this.$route.params.id
     )
-
+    this.$store.commit('info', res.data)
     const info = res.data
     console.log('res', res)
-    this.$store.commit('info', res.data)
+
     console.log('res2', res.data.title)
     console.log('info', info)
   },
   computed: {
     ...mapState({
-      list: state => state.list,
-      imageUrl: state => state.infos.image.Url,
-      info: state => state.info
+      info: state => state.info,
+      id: state => state.id
     })
   },
-
   methods: {
-    ...mapMutations(['set', 'increment', 'reset'])
+    ...mapMutations(['get_info', 'set', 'increment', 'reset'])
   },
   components: {}
 }
