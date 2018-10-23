@@ -494,12 +494,6 @@
             <div class="borderBottom"></div>
           </article>
 
-          <article class="sideImg" id="BenefBotImg" data-aos="fade-left" data-aos-offset="300" data-aos-duration="600">
-            <div class="BottomImg">
-              <img src="~/assets/images/palmImg4.png" alt="working on a computer">
-              <img src="~/assets/images/littlePalmyra.png" alt="logo Palmyra" id="lastPalmyra">
-            </div>
-          </article>
 
 </section>
          <!-- end of page -->
