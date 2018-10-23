@@ -3,9 +3,6 @@
         <div class="container">
             <h3>{{info.title }}</h3>
             <p>{{info.description || 'No description provided.' }}</p>
-
-
-
         </div>
     </section>
 </template>
