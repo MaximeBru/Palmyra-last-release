@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 /* na bar stymle */
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,300,700');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 * {
   margin: 0;
@@ -15,7 +15,7 @@
 
 html {
   font-size: 62.5%; /*Rend la police responsive et met Ã  l'echelle 10px = 1rem*/
-
+  overflow-x: hidden;
   /* background-color: rgba(202,202,202,1); */
 }
 
@@ -30,7 +30,9 @@ header {
 .HomeSec {
   height: 50rem;
   position: relative;
-  margin-bottom: 40rem;
+  margin-bottom: 54rem;
+
+  /*   margin-top: 10rem; */
 }
 
 h2 {
@@ -39,6 +41,9 @@ h2 {
 a {
   font-family: 'Roboto', sans-serif;
   color: black;
+}
+p {
+  letter-spacing: 1px;
 }
 .TopTitle {
   position: absolute;
@@ -157,6 +162,9 @@ h2 {
 .FirstParalax {
 }
 
+.FirstParalax {
+}
+
 .ToPres {
   margin-top: 4rem;
   margin-left: 4rem;
@@ -169,7 +177,7 @@ hr {
 
 .img-box {
   position: relative;
-  height: 70rem;
+  height: 63rem;
   background-image: url('../assets/images/PalmBackground.jpg');
   background-size: cover;
   background-position: top center;
@@ -249,7 +257,7 @@ hr {
   position: relative;
 }
 .red {
-  color: #d83431;
+  color: #eb456e;
 }
 .triangle {
   width: 0;
@@ -258,7 +266,7 @@ hr {
   border-bottom-width: 209px;
   border-top-width: 0px;
   border-left: 163px solid white;
-  margin-left: 99.9%;
+  margin-left: 100%;
 }
 .artRigth {
   display: inline-block;
@@ -266,15 +274,15 @@ hr {
 }
 .DescIntro {
   position: absolute;
-  top: 27%;
-  left: 52%;
-  width: 30%;
-  font-size: 1.5rem;
+  top: 26%;
+  left: 45%;
+  width: 36%;
+  font-size: 2.5rem;
 }
 .artLeft {
   display: inline-block;
-  position: absolute;
-  top: 75%;
+  position: relative;
+  top: 11rem;
   left: 24%;
 }
 /* ========image article droite============= */
@@ -302,6 +310,9 @@ hr {
 /* =========================Functionality card========================== */
 #Fonctionality {
   width: 70%;
+  bottom: 12rem;
+  left: 31%;
+  top: -13rem;
 }
 .FonctionalCard {
   width: 25rem;
@@ -335,6 +346,7 @@ hr {
 .Homethird {
   position: relative;
   margin-bottom: 16rem;
+  width: 100%;
 }
 /*===================== barre de navigation============================ */
 .CanvasContainer {
@@ -401,17 +413,17 @@ hr {
 .SecPerc {
   position: absolute;
   top: 42%;
-  left: 25.5%;
+  left: 26.5%;
 }
 .thirdPerc {
   position: absolute;
   top: 63%;
-  left: 30.5%;
+  left: 32.5%;
 }
 .LastPerc {
   position: absolute;
   top: 84%;
-  left: 35.5%;
+  left: 38.5%;
 }
 .toLeft {
   right: 65%;
@@ -454,7 +466,7 @@ hr {
 
 .igFrameBar:before {
   content: '';
-  width: 114%;
+  width: 74%;
   height: 1px;
   background: grey;
   position: absolute;
@@ -521,7 +533,7 @@ hr {
   left: 260px;
 }
 .igData1 {
-  background: #d83431;
+  background: #eb456e;
   height: 0px;
   left: 10px;
   -webkit-animation: showBar1 1.2s 0.1s forwards;
@@ -530,7 +542,7 @@ hr {
 }
 
 .igData2 {
-  background: #d83431;
+  background: #eb456e;
   height: 0px;
   left: 60px;
   -webkit-animation: showBar2 1.2s 0.2s forwards;
@@ -539,7 +551,7 @@ hr {
 }
 
 .igData3 {
-  background: #d83431;
+  background: #eb456e;
   height: 0px;
   left: 110px;
   -webkit-animation: showBar3 1.2s 0.3s forwards;
@@ -548,7 +560,7 @@ hr {
 }
 
 .igData4 {
-  background: #d83431;
+  background: #eb456e;
   height: 0px;
   left: 160px;
   -webkit-animation: showBar4 1.2s 0.4s forwards;
@@ -557,7 +569,7 @@ hr {
 }
 
 .igData5 {
-  background: #d83431;
+  background: #eb456e;
   height: 0px;
   left: 210px;
   -webkit-animation: showBar5 1.2s 0.5s forwards;
@@ -566,7 +578,7 @@ hr {
 }
 
 .igData6 {
-  background: #d83431;
+  background: #eb456e;
   height: 0px;
   left: 260px;
   -webkit-animation: showBar6 1.2s 0.6s forwards;
@@ -645,7 +657,7 @@ hr {
 }
 
 .Backred {
-  background: #d83431;
+  background: #eb456e;
 }
 @-webkit-keyframes showBar1 {
   0% {
@@ -716,7 +728,7 @@ hr {
   margin-left: 10.5%;
   margin-top: -62px;
   /*   display: inline-block;
-width: 30%; */
+  width: 30%; */
 }
 .Promote p {
   line-height: 1;
@@ -728,11 +740,12 @@ width: 30%; */
   margin-left: 58%;
   margin-bottom: 10rem;
 }
-
+.iconleft img {
+  width: 58rem;
+}
 /* ============Table part (new page)================ */
 .QualityPart {
   position: relative;
-  margin-top: 10rem;
 }
 
 .tableArt {
@@ -814,7 +827,7 @@ tr:first-child th:last-child {
 .Benefit {
   position: relative;
   margin-top: 10rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .Benefit h3 {
   margin-top: -4.5rem;
@@ -834,6 +847,7 @@ tr:first-child th:last-child {
   margin-left: 10%;
   display: inline-block;
   margin-bottom: 8rem;
+  vertical-align: top;
 }
 .borderTop {
   width: 8.5rem;
@@ -855,9 +869,8 @@ tr:first-child th:last-child {
 }
 
 #BenefBotImg {
-  margin-bottom: -2.5rem;
+  margin-top: -3rem;
 }
-
 #lastPalmyra {
   position: absolute;
   right: 4rem;
@@ -896,10 +909,6 @@ tr:first-child th:last-child {
     padding-top: 0;
   }
 }
-
-#header .main-nav {
-  margin-bottom: 0;
-}
 #header .main-nav > li {
   display: inline-block;
   /*   margin-right: 30px; */
@@ -915,7 +924,7 @@ tr:first-child th:last-child {
 
 @media only screen and (min-width: 1200px) {
   #header .main-nav > li a {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 #header .main-nav > li a:hover {
@@ -923,14 +932,29 @@ tr:first-child th:last-child {
 }
 #header .main-nav > li > a {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   position: relative;
 }
 
 @media only screen and (min-width: 1200px) {
   #header .main-nav > li > a {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
+}
+
+#header .main-nav > li a:before {
+  content: '|';
+  position: absolute;
+  right: 0;
+  top: -1px;
+  color: #eb456e;
+  display: block;
+  font-size: 15px;
+}
+#header .main-nav > li a:before:last-child {
+}
+#search {
+  padding-right: 8rem !important;
 }
 #header .main-nav .function-addon {
   margin: 0;
@@ -964,8 +988,8 @@ tr:first-child th:last-child {
   width: 100%;
   top: 100px;
   left: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease;
@@ -991,9 +1015,9 @@ tr:first-child th:last-child {
   position: absolute;
   right: 0;
   top: -1px;
-  color: #fff;
+  color: #eb456e;
   display: block;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .sub-menu ul li:last-child {
@@ -1007,7 +1031,7 @@ tr:first-child th:last-child {
 
 .sub-menu ul li a {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
@@ -1056,7 +1080,7 @@ tr:first-child th:last-child {
   }
 
   .header .main-nav > li a {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .header .main-nav .function-addon {
@@ -1187,7 +1211,7 @@ tr:first-child th:last-child {
     right: 24px;
     width: 18px;
     padding: 0;
-    /*     background: url(../images/clear-input.png) no-repeat center center; */
+    /*   background: url('../images/clear-input.png') no-repeat center center; */
     background-size: contain;
     text-indent: -9999px;
   }
@@ -1288,12 +1312,12 @@ tr:first-child th:last-child {
 
 .search-form {
   position: relative;
-  /*  background: url("../images/search-icon.png") no-repeat 0 20px; */
+  /*  background: url('../images/search-icon.png') no-repeat 0 20px; */
 }
 
 .search-form .input-form {
   width: 100%;
-  font-size: 50px;
+  font-size: 20px;
   margin: 0;
   padding: 10px 0 10px 65px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -1383,11 +1407,13 @@ tr:first-child th:last-child {
   }
 }
 
+/* img nav */
 #imgNav {
   padding-top: 1rem;
   padding-left: 1rem;
 }
 #imgNav img {
+  width: 18rem;
 }
 #imgNav li:before {
   display: none;
@@ -1398,7 +1424,9 @@ tr:first-child th:last-child {
 }
 .imgNavTitle {
 }
-/* =======================footer part=============================== */
+/* end of navigation part css */
+
+/* ================footer css ================== */
 .footer {
   width: 100%;
   position: relative;
@@ -1498,9 +1526,9 @@ tr:first-child th:last-child {
     width: 100%;
   }
 }
+/* ===================footer css end ===========*/
 
-/* end footer */
-/* ============slider============ */
+/* slieder=================== */
 .container {
   width: 100%;
   margin: 0;
@@ -1665,7 +1693,9 @@ tr:first-child th:last-child {
   opacity: 0.5;
   background: black;
 }
-/* news part ====================== */
+
+/* =====================news card=================== */
+
 .SecNews {
   display: block;
   width: 100%;
@@ -1679,6 +1709,7 @@ tr:first-child th:last-child {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  margin-left: -9rem;
 }
 figure.snip1208 {
   font-family: 'Raleway', Arial, sans-serif;
@@ -1718,9 +1749,9 @@ figure.snip1208 figcaption {
 }
 figure.snip1208 .date,
 figure.snip1208 i {
-  background-color: #1abc9c;
+  background-color: white;
   top: 25px;
-  color: #fff;
+  color: #eb456e;
   left: 25px;
   min-height: 60px;
   min-width: 60px;
@@ -1736,7 +1767,7 @@ figure.snip1208 .date {
 }
 figure.snip1208 .date span {
   display: block;
-  line-height: 30px;
+  line-height: 31px;
 }
 figure.snip1208 .date .month {
   font-size: 16px;
@@ -1770,12 +1801,13 @@ figure.snip1208 p {
 figure.snip1208 button {
   border: medium none;
   padding: 10px 20px;
-  background-color: #1abc9c;
+  background-color: white;
   font-weight: 800;
-  color: #ffffff;
+  color: #eb456e;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 0.8em;
+  border: solid 2px #eb456e;
 }
 figure.snip1208 a {
   left: 0;
@@ -1806,7 +1838,8 @@ figure.snip1208.hover i {
 }
 figure.snip1208:hover button,
 figure.snip1208.hover button {
-  background-color: #117964;
+  background-color: #eb456e;
+  color: white;
 }
 
 /* call to action btn */
@@ -1818,7 +1851,7 @@ figure.snip1208.hover button {
   text-decoration: none;
 }
 .arrow-container a:hover {
-  color: #d83431;
+  color: #eb456e;
 }
 .arrow-container p {
   position: relative;
@@ -1852,4 +1885,134 @@ figure.snip1208.hover button {
   to {
     transform: translateX(-15px);
   }
+}
+/* =============================partie video==================== */
+.Homefour {
+  margin-bottom: 55rem;
+}
+
+/* =================================modification=========================================== */
+.PresentationPalm {
+  width: 100%;
+  padding-left: 6%;
+}
+.PresentationPalm .benefitArt {
+  width: 30%;
+  min-height: 26rem;
+}
+.benefitArt img {
+  vertical-align: top;
+  width: 5rem;
+  margin-top: -1rem;
+  margin-left: 0rem;
+}
+.DefPresArt {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+.NumberDef {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+/* ============round palm */
+.grey {
+  color: #595959;
+}
+.RoundPalm {
+  width: 100%;
+  position: relative;
+  padding-top: 10rem;
+  margin-bottom: 15rem;
+}
+.RoundPalm ul {
+  padding-left: 0rem;
+}
+.RoundPalm ul li {
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+}
+.RoundPalm h4 {
+  font-size: 2.5rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.RoundPalm p {
+  font-size: 1.5rem;
+}
+.RoundPalm img {
+}
+.palmcircleTouch {
+  margin-left: 35%;
+  margin-top: -9rem;
+}
+
+.RoundText1 {
+  position: absolute;
+  top: 66rem;
+  left: 19%;
+}
+.RoundTex2 {
+  position: absolute;
+  top: 53rem;
+  right: 20%;
+}
+.RoundTex2 h4 {
+  text-align: left;
+}
+.RoundTex2 li p {
+  text-align: left;
+}
+
+.RoundTex3 {
+  position: absolute;
+  left: 19%;
+  top: 43%;
+}
+#sideDif {
+  left: 22%;
+  top: 15rem;
+}
+#diff {
+}
+#heigtDiff {
+  bottom: 28rem;
+}
+.videoPart {
+  display: inline-block;
+  border-left: solid 1px black;
+  margin-left: 9%;
+  padding-left: 9%;
+}
+.niceBorder {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ajustement des logos */
+#card {
+  width: 8rem;
+  margin-right: -2rem;
+}
+#bank {
+  width: 6rem;
+}
+#contract {
+  width: 12rem;
+  margin-right: -4rem;
+}
+#cloud {
+  width: 7rem;
+  margin-top: 0.5rem;
+  margin-right: -1rem;
+}
+#chip {
+  width: 6rem;
+  margin-right: -1rem;
+}
+#licorne {
+  width: 9rem;
+  margin-right: -3rem;
 }
