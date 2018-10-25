@@ -10,7 +10,7 @@
             <h3>{{ info.title }}</h3>
             <p>{{ info.description || 'No description provided.' }}</p>
             <button>Read More</button>
-          </figcaption></figcaption><a :href="'info/' + info.id"></a>
+          </figcaption></figcaption><a :href="'news/' + info.id"></a>
         </figure>
 
   </section>

@@ -31,6 +31,9 @@ const mutations = {
   },
   setCurrentinfo: (state, info) => {
     state.info = info
+  },
+  get_imageUrl(state, data) {
+    state.info.image.url = data
   }
 }
 

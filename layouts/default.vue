@@ -243,5 +243,3 @@
     <!-- end of template -->
   </div>
 </template>
-
-
