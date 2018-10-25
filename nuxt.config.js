@@ -39,6 +39,7 @@ module.exports = {
       },
       /*       { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js'}, */
       { src: '/js/jssor.slider.min.js' },
+      { src: '/js/slider.js' },
       { src: '/js/docs.js' },
       /*  { src: '/js/slider.js' }, */
       { src: '/js/customjs.js' }

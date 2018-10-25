@@ -266,7 +266,7 @@ hr {
   border-bottom-width: 209px;
   border-top-width: 0px;
   border-left: 163px solid white;
-  margin-left: 100%;
+  margin-left: 99.9%;
 }
 .artRigth {
   display: inline-block;
@@ -1792,6 +1792,9 @@ figure.snip1208 h3 {
   font-weight: 600;
   color: #333333;
   text-transform: uppercase;
+  font-size: 1.5rem;
+  min-height: 3rem;
+  max-height: 3rem;
 }
 figure.snip1208 p {
   font-size: 0.8em;

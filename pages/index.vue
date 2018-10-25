@@ -189,55 +189,15 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
     <!--=========================== section news========================== -->
     <section class="SecNews">
       <h2 class="NewsTilte">Palmyra News</h2>
-      <figure class="snip1208">
-        <img src="~/assets/images/brainTech.jpg" alt="sample66" />
-        <div class="date"><span class="day">28</span><span class="month">Oct</span></div><i class="ion-bookmark"></i>
-        <figcaption>
-          <h3>The World Ended Yesterday</h3>
-          <p>
-            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to
-            me anyway.
-          </p>
-          <button>Read More</button>
-        </figcaption><a href="#"></a>
-      </figure>
-      <figure class="snip1208 ">
-        <img src="~/assets/images/boardroom-meeting-flatlay.jpg" alt="sample9" />
-        <div class="date"><span class="day">17</span><span class="month">Nov</span></div><i class="ion-cloud">
-        </i>
-        <figcaption>
-          <h3>An Abstract Post Heading</h3>
-          <p>
-            Sometimes the surest sign that intelligent life exists elsewhere in the universe is that none of it has
-            tried to contact us.
-          </p>
-          <button>Read More</button>
-        </figcaption><a href="#"></a>
-      </figure>
-      <figure class="snip1208">
-        <img src="~/assets/images/internet-security.jpg" alt="sample6" />
-        <div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
-        <figcaption>
-          <h3>Down with this sort of thing</h3>
-          <p>
-            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to
-            me anyway.
-          </p>
-          <button>Read More</button>
-        </figcaption><a href="#"></a>
-      </figure>
-      <figure class="snip1208">
-        <img src="~/assets/images/creative-brain-storm.jpg" alt="sample6" />
-        <div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
-        <figcaption>
-          <h3>Down with this sort of thing</h3>
-          <p>
-            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to
-            me anyway.
-          </p>
-          <button>Read More</button>
-        </figcaption><a href="#"></a>
-      </figure>
+      <figure v-for="info in infos.slice(0, 4)" :key="info.id" class="snip1208">
+          <img :src="'http://localhost:1337' + info.image.url" alt="sample66" />
+          <div class="date"><span class="day">{{$moment( info.date ).format('DD')}}</span><span class="month">{{$moment( info.date ).format('MMM')}}</span></div><i :class="info.logo.code"></i>
+          <figcaption>
+            <h3>{{ info.title }}</h3>
+            <p>{{ info.description || 'No description provided.' }}</p>
+            <button>Read More</button>
+          </figcaption></figcaption><a :href="'info/' + info.id"></a>
+        </figure>
       <div class="arrow-container">
         <a href="#">
           <p>View All<i class="fas fa-angle-right arrow-right"></i></p>
@@ -750,17 +710,41 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
     <!-- last section main -->
 
 
-
+<script type="text/javascript" src="/js/slider.js"></script>
+<script type="text/javascript" src="/js/customjs.js"></script>
          <!-- end of page -->
 </div>
 
 </template>
+
 <script>
+import Vue from 'vue'
+import { mapState, mapMutations } from 'vuex'
+import axios from 'axios'
+import VueMoment from 'vue-moment'
+import * as moment from 'moment'
+
 export default {
   head() {
     return {
       script: [{ src: '/js/slider.js' }]
     }
-  }
+  },
+  async created() {
+    const res = await axios('http://localhost:1337/infos')
+    console.log('res', res)
+    this.$store.commit('initial', res.data)
+  },
+  computed: {
+    ...mapState({
+      infos: state => state.infos,
+      list: state => state.list,
+      imageUrl: state => state.infos.image.Url
+    })
+  },
+  methods: {
+    ...mapMutations(['get_infos', 'set', 'increment', 'reset'])
+  },
+  components: {}
 }
 </script>
