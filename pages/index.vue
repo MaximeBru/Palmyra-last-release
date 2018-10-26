@@ -199,7 +199,7 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
           </figcaption></figcaption><a :href="'info/' + info.id"></a>
         </figure>
       <div class="arrow-container">
-        <a href="#">
+        <a :href="'news/'">
           <p>View All<i class="fas fa-angle-right arrow-right"></i></p>
         </a>
       </div>
@@ -725,10 +725,10 @@ import VueMoment from 'vue-moment'
 import * as moment from 'moment'
 
 export default {
-  head() {
-    return {
+  head: {
+    /*     return {
       script: [{ src: '/js/slider.js' }]
-    }
+    } */
   },
   async created() {
     const res = await axios('http://localhost:1337/infos')
