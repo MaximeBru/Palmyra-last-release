@@ -1,6 +1,8 @@
 <template>
   <section class="container">
 
+  <!-- ... -->
+
   <section class="SecNews">
         <h2 class="NewsTilte">En Savoir Plus Sur Vermeg</h2>
         <figure v-for="info in infos" :key="info.id" class="snip1208">
