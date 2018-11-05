@@ -99,6 +99,9 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
           <img class="ToPresBorder" src="~/assets/images/border.png" alt="ligne rouge entéte de section ">
           <h2 class="TopTitleImg">WHAT IS<br> <span class="red">PALMYRA ?</span></h2>
         </article>
+        <article class="responsiveTitle">
+          <h2>WHAT IS PALMYRA</h2>
+        </article>
         <article class="DescIntro" data-aos="fade-left" data-aos-offset="350" data-aos-duration="600">
           <p>You're accelerator for digital transformation</p>
         </article>

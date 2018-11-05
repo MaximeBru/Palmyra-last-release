@@ -4,7 +4,7 @@
   <!-- ... -->
 
   <section class="SecNews">
-        <h2 class="NewsTilte">En Savoir Plus Sur Vermeg</h2>
+        <h2 class="NewsTilte">Vermeg News</h2>
         <figure v-for="info in infos" :key="info.id" class="snip1208">
           <img :src="'http://localhost:1337' + info.image.url" alt="sample66" />
           <div class="date"><span class="day">{{$moment( info.date ).format('DD')}}</span><span class="month">{{$moment( info.date ).format('MMM')}}</span></div><i :class="info.logo.code"></i>
