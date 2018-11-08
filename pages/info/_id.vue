@@ -36,7 +36,18 @@ import axios from 'axios'
 import VueMoment from 'vue-moment'
 import * as moment from 'moment'
 export default {
-  head: {},
+  head() {
+    return {
+      title: this.info.metaTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '' + this.info.metaDescription + ''
+        }
+      ]
+    }
+  },
 
   /*   async created() {
     const res = await axios(

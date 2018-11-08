@@ -27,7 +27,16 @@ import VueMoment from 'vue-moment'
 import * as moment from 'moment'
 
 export default {
-  head: {},
+  head: {
+    /*     title: this.title, */
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Ma description personnalisée'
+      }
+    ]
+  },
   async created() {
     const res = await axios('http://localhost:1337/infos')
     console.log('res', res)

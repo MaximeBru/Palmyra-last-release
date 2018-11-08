@@ -28,7 +28,7 @@
                   <nuxt-link to="/news" data-parent-menu="news">News</nuxt-link>
                 </li>
                 <li>
-                  <a data-parent-menu="Careers" href="#">Contact Us</a>
+                  <nuxt-link to="/contact" data-parent-menu="Careers">Contact Us</nuxt-link>
                 </li>
               </ul>
             </nav>

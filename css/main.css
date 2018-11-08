@@ -736,7 +736,7 @@ hr {
   margin-bottom: 10rem;
 }
 .iconleft img {
-  width: 58rem;
+  width: 82%;
 }
 /* ============Table part (new page)================ */
 .QualityPart {
@@ -1945,6 +1945,7 @@ figure.snip1208.hover button {
 .palmcircleTouch {
   margin-left: 35%;
   margin-top: -9rem;
+  width: 30%;
 }
 
 .RoundText1 {
