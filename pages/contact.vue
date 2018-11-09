@@ -6,25 +6,55 @@
       Contact
     </h1>
     <div class="content">
-      <form>
-        <label class="form-label" for="name">
+
+        <b-btn v-b-modal.modal1>Demande d'Information</b-btn>
+
+  <!-- Modal Component -->
+  <b-modal ref="myModalRef" v-b-modal.modallg variant="primary" hide-footer @ok="addToApi" id="modal1" title="Demande d'Information">
+    <p class="my-4">we'll send you the doc by mail</p>
+    <b-form>
+      <b-form-group id="exampleInputGroup1"
+                    label-for="name">
+        <b-form-label class="form-label" for="name">
           Name:
-        </label>
-        <input class="form-field" name="name" id="name" v-model="Email.name" />
-        <label class="form-label" for="email">
+        </b-form-label>
+        <b-form-input class="form-field" name="name" id="name" v-model="Email.name" />
+         </b-form-group>
+
+      <b-form-group
+                    label-for="email"
+                    description="We'll never share your email with anyone else.">
+
+        <b-form-label class="form-label" for="email">
           Email:
-        </label>
-        <input class="form-field" name="email" id="email" v-model="Email.email"/>
-        <label class="form-label" for="message">
-          nickname
-        </label>
-        <input class="form-field" name="nickname" id="nickname" v-model="Email.firstname" />
-        <label class="form-label" for="message">
+        </b-form-label>
+        <b-form-input class="form-field" name="email" id="email" v-model="Email.email"/>
+      </b-form-group>
+      <b-form-group label-for="firstname">
+        <b-form-label class="form-label" for="message">
+          firstname
+        </b-form-label>
+        <b-form-input class="form-field" name="nickname" id="nickname" v-model="Email.firstname" />
+      </b-form-group>
+      <b-form-group label-for="firstname">
+        <b-form-label class="form-label" for="message">
           society:
-        </label>
-        <input class="form-field" name="society" id="society" v-model="Email.society" />
-        <input class="form-button" type="submit" value="Send message" @click="addToApi" />
-      </form>
+        </b-form-label>
+        <b-form-input class="form-field" name="society" id="society" v-model="Email.society" />
+      </b-form-group>
+    </b-form>
+          <b-btn size="sm" class="float-right" block  variant="outline-primary" @click="addToApi">
+           Recevoir la documentation
+         </b-btn>
+
+         <b-btn size="sm" class="float-right" block  variant="outline-danger"  @click="hideModal">
+           Close
+         </b-btn>
+
+
+  </b-modal>
+
+
     </div>
 
 </section>
@@ -77,6 +107,11 @@ export default {
         .catch(error => {
           console.log(error)
         })
+      this.$refs.myModalRef.hide()
+    },
+
+    hideModal() {
+      this.$refs.myModalRef.hide()
     }
   },
 
