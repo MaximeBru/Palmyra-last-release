@@ -22,11 +22,6 @@ module.exports = {
       {
         rel: 'stylesheet',
         href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
       }
     ],
     script: [
@@ -36,10 +31,6 @@ module.exports = {
       {
         src:
           'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
-      },
-      {
-        src:
-          'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
       },
       {
         src:
@@ -80,7 +71,7 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
-    'bootstrap-vue/nuxt',
+    ['bootstrap-vue/nuxt', { css: false }],
     '@nuxtjs/moment'
   ],
   /*

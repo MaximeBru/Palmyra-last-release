@@ -7,52 +7,42 @@
     </h1>
     <div class="content">
 
-        <b-btn v-b-modal.modal1>Demande d'Information</b-btn>
+        <btn >Demande d'Information</btn>
 
   <!-- Modal Component -->
-  <b-modal ref="myModalRef" v-b-modal.modallg variant="primary" hide-footer @ok="addToApi" id="modal1" title="Demande d'Information">
-    <p class="my-4">we'll send you the doc by mail</p>
-    <b-form>
-      <b-form-group id="exampleInputGroup1"
-                    label-for="name">
-        <b-form-label class="form-label" for="name">
+ <!--  <b-modal ref="myModalRef" v-b-modal.modallg variant="primary" hide-footer @ok="addToApi" id="modal1" title="Demande d'Information"> -->
+
+    <form>
+
+        <label  name="name" for="name">
           Name:
-        </b-form-label>
-        <b-form-input class="form-field" name="name" id="name" v-model="Email.name" />
-         </b-form-group>
+        </label>
+        <input  name="name" id="name" v-model="Email.name" />
 
-      <b-form-group
-                    label-for="email"
-                    description="We'll never share your email with anyone else.">
 
-        <b-form-label class="form-label" for="email">
+
+        <label  name="email" for="email">
           Email:
-        </b-form-label>
-        <b-form-input class="form-field" name="email" id="email" v-model="Email.email"/>
-      </b-form-group>
-      <b-form-group label-for="firstname">
-        <b-form-label class="form-label" for="message">
+        </label>
+        <input  name="email" id="email" v-model="Email.email"/>
+
+        <label name="firstname"  for="message">
           firstname
-        </b-form-label>
-        <b-form-input class="form-field" name="nickname" id="nickname" v-model="Email.firstname" />
-      </b-form-group>
-      <b-form-group label-for="firstname">
-        <b-form-label class="form-label" for="message">
+        </label>
+        <input  name="firstname" id="firstname" v-model="Email.firstname" />
+
+
+        <label  name="society" for="message">
           society:
-        </b-form-label>
-        <b-form-input class="form-field" name="society" id="society" v-model="Email.society" />
-      </b-form-group>
-    </b-form>
-          <b-btn size="sm" class="float-right" block  variant="outline-primary" @click="addToApi">
-           Recevoir la documentation
-         </b-btn>
+        </label>
+        <input  name="society" id="society" v-model="Email.society" />
+          <input type="submit"    @click="addToApi">
 
-         <b-btn size="sm" class="float-right" block  variant="outline-danger"  @click="hideModal">
-           Close
-         </b-btn>
+    </form>
 
 
-  </b-modal>
+
+ <!--  </b-modal> -->
 
 
     </div>
@@ -62,14 +52,12 @@
 
 <script>
 import Vue from 'vue'
+/* import BootstrapVue from 'bootstrap-vue' */
 import { mapState, mapActions, mapMutations } from 'vuex'
 /* import { init } from './shared' */
 import axios from 'axios'
 import VueMoment from 'vue-moment'
 import * as moment from 'moment'
-import Strapi from 'strapi-sdk-javascript/build/main'
-const apiUrl = 'http://localhost:1337/emails'
-const strapi = new Strapi(apiUrl)
 export default {
   head: {},
   async created() {
@@ -85,8 +73,8 @@ export default {
         name: '',
         firstname: '',
         email: '',
-        society: '',
-        loading: false
+        society: ''
+        /* loading: false */
       }
     }
   },
@@ -107,11 +95,6 @@ export default {
         .catch(error => {
           console.log(error)
         })
-      this.$refs.myModalRef.hide()
-    },
-
-    hideModal() {
-      this.$refs.myModalRef.hide()
     }
   },
 
@@ -125,6 +108,6 @@ export default {
 }
 </script>
 <style lang="css">
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+/* @import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
 </style>
 
