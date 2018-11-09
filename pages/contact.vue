@@ -80,26 +80,6 @@ export default {
     }
   },
 
-  /*         const response = await strapi.request('post', '/graphql', {
-          data: {
-            query: `query {
-            emails {
-              name
-              email
-              society
-              nickname
-              }
-            }
-          `
-          }
-        })
-        this.loading = false
-        this.$router.go(-1)
-      } catch (err) {
-        this.loading = false
-        alert(err.message || 'An error occurred.')
-      } */
-
   computed: {
     ...mapState({
       infos: state => state.infos,
