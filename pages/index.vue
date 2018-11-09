@@ -556,34 +556,6 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
     <section class="Homefour expanded" id="target3"  data-magellan-target="test3">
       <article class="graphContainer">
 
-        <!--         <div class="graphTitle" data-aos="fade-right" data-aos-offset="350" data-aos-duration="600">
-          <h3 class="red"><strong>A BASE FRAME</strong></h3>
-          <p><span class="red"><i class="fas fa-circle"></i></span> Agile </p>
-          <p><span class="pink"><i class="fas fa-circle"></i></span> Business Analysis</p>
-          <p><span class="grey"><i class="fas fa-circle"></i></span> Development</p>
-
-        </div>
-         ==========garph bar begin===== -->
-        <!-- <div class="igFrameBar">
-          <div class="iTab iTab1"></div>
-          <div class="iTab iTab2"></div>
-          <div class="iTab iTab3"></div>
-          <div class="iTab iTab4"></div>
-          <div class="iTab iTab5"></div>
-          <div class="iTab iTab6"></div>
-          <div class="igData " id="isdat1"> </div>
-          <div class="igData " id="isdat2"></div>
-          <div class="igData " id="isdat3"></div>
-          <div class="igData " id="isdat4"></div>
-          <div class="igData " id="isdat5"></div>
-          <div class="igData " id="isdat6"></div>
-
-        </div> -->
-        <!-- =======graph bar end=========== -->
-        <!--         <article class="artRigth">
-
-        </article> -->
-
         <article class="sideImg" id="heigtDiff" data-aos="fade-left" data-aos-offset="300" data-aos-duration="600">
           <div class="BottomImg">
             <img src="~/assets/images/palmImg2.png" alt="working on a computer">

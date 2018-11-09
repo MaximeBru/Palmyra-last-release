@@ -1,38 +1,29 @@
 <template>
   <section class="container">
-
-  <!-- ... -->
-<h1 class="title">
-      Contact
-    </h1>
     <div class="content">
 
-        <btn >Demande d'Information</btn>
-
-  <!-- Modal Component -->
- <!--  <b-modal ref="myModalRef" v-b-modal.modallg variant="primary" hide-footer @ok="addToApi" id="modal1" title="Demande d'Information"> -->
 
     <form>
 
-        <label  name="name" for="name">
+        <label  name="name" >
           Name:
         </label>
         <input  name="name" id="name" v-model="Email.name" />
 
 
 
-        <label  name="email" for="email">
+        <label  name="email">
           Email:
         </label>
         <input  name="email" id="email" v-model="Email.email"/>
 
-        <label name="firstname"  for="message">
+        <label name="firstname"  >
           firstname
         </label>
         <input  name="firstname" id="firstname" v-model="Email.firstname" />
 
 
-        <label  name="society" for="message">
+        <label  name="society" >
           society:
         </label>
         <input  name="society" id="society" v-model="Email.society" />
@@ -42,7 +33,7 @@
 
 
 
- <!--  </b-modal> -->
+
 
 
     </div>
@@ -60,12 +51,6 @@ import VueMoment from 'vue-moment'
 import * as moment from 'moment'
 export default {
   head: {},
-  async created() {
-    const res = await axios('http://localhost:1337')
-
-    console.log('res', res)
-    this.$store.commit('initial', res.data)
-  },
 
   data() {
     return {
@@ -73,8 +58,8 @@ export default {
         name: '',
         firstname: '',
         email: '',
-        society: ''
-        /* loading: false */
+        society: '',
+        loading: false
       }
     }
   },
@@ -100,7 +85,7 @@ export default {
 
   computed: {
     ...mapState({
-      infos: state => state.infos,
+      infos: state => state.email,
       list: state => state.list
     })
   },
@@ -108,6 +93,6 @@ export default {
 }
 </script>
 <style lang="css">
-/* @import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 </style>
 
