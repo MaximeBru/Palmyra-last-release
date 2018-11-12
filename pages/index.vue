@@ -677,8 +677,7 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
         </div>
       </article> -->
       <article class="videoPart">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/b-wIMYfDYWI?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YEkMq4ieWkM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </article>
     </section>
     </main>
