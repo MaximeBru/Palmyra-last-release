@@ -38,7 +38,6 @@ module.exports = {
       },
 
       { src: '/js/jssor.slider.min.js' },
-      /*    { src: '/js/slider.js' }, */
       { src: '/js/docs.js' },
       { src: '/js/customjs.js' }
     ]
@@ -63,7 +62,8 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/aos', ssr: false },
-    { src: '~plugins/vee-validate.js', ssr: true }
+    { src: '~plugins/vee-validate.js', ssr: true },
+    { src: '~plugins/vue-cookie-law.js', ssr: false }
   ],
 
   /*
