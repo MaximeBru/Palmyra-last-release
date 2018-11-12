@@ -243,3 +243,13 @@
     <!-- end of template -->
   </div>
 </template>
+<style scoped>
+body {
+  box-sizing: content-box;
+}
+.container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+</style>

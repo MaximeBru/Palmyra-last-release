@@ -1,34 +1,38 @@
 <template>
   <section class="container">
-
+</header>
+<main>
   <!-- ... -->
-<h1 class="title">
-      Contact
-    </h1>
-    <div class="content">
 
-        <b-btn v-b-modal.modal1>Demande d'Information</b-btn>
+    <div class="content">
+      <h1 class="title">
+      Contact
+     </h1>
+
+  <b-btn v-b-modal.modal1>Demande d'Information</b-btn>
 
   <!-- Modal Component -->
   <b-modal ref="myModalRef" v-b-modal.modallg variant="primary" hide-footer @ok="addToApi" id="modal1" title="Demande d'Information">
     <p class="my-4">We'll send you the doc by mail</p>
-    <b-form>
+    <b-form >
       <b-form-group id="exampleInputGroup1"
                     label-for="name">
-        <b-form-label class="form-label" for="name">
+        <b-form-label class="form-label" for="name" >
           Name:
         </b-form-label>
-        <b-form-input class="form-field" name="name" id="name" v-model="Email.name" />
+
+        <b-form-input class="form-field" name="name" id="name" v-model="Email.name"/>
          </b-form-group>
 
-      <b-form-group
+    <b-form-group
                     label-for="email"
                     description="We'll never share your email with anyone else.">
 
         <b-form-label class="form-label" for="email">
           Email:
         </b-form-label>
-        <b-form-input class="form-field" name="email" id="email" v-model="Email.email"/>
+        <b-form-input class="form-field" name="email" id="email" v-model="Email.email" v-validate="'required|email'"/>
+        <!-- <span>{{ errors.first('email') }}</span> -->
       </b-form-group>
       <b-form-group label-for="firstname">
         <b-form-label class="form-label" for="message">
@@ -56,22 +60,30 @@
 
 
     </div>
-
+</main>
 </section>
 </template>
 
 <script>
 import Vue from 'vue'
 import { mapState, mapActions, mapMutations } from 'vuex'
-/* import { init } from './shared' */
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+/* import 'bootstrap-vue/dist/bootstrap-vue.css' */
 import axios from 'axios'
 import VueMoment from 'vue-moment'
 import * as moment from 'moment'
-import Strapi from 'strapi-sdk-javascript/build/main'
-const apiUrl = 'http://localhost:1337/emails'
-const strapi = new Strapi(apiUrl)
+import VeeValidate from 'vee-validate'
+
 export default {
-  head: {},
+  inject: ['$validator'],
+  head: {
+    script: [
+      {
+        src: 'https://unpkg.com/vee-validate@latest'
+      }
+    ]
+  },
   data() {
     return {
       Email: {
@@ -83,6 +95,7 @@ export default {
       }
     }
   },
+
   methods: {
     addToApi() {
       let newEmail = {
@@ -105,19 +118,30 @@ export default {
 
     hideModal() {
       this.$refs.myModalRef.hide()
+    },
+    validateBeforeSubmit(e) {
+      this.$validator
+        .validateAll()
+        .then(x => {
+          console.log(x)
+        })
+        .catch(e => {
+          console.log(e)
+        })
     }
   },
 
   computed: {
     ...mapState({
-      infos: state => state.infos,
+      Emails: state => state.Emails,
       list: state => state.list
     })
+    /*    errors: function() {
+      return new ErrorBag()
+    } */
   },
   components: {}
 }
 </script>
-<style lang="css">
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-</style>
+
 
