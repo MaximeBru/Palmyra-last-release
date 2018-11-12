@@ -17,43 +17,45 @@
     <b-form >
       <b-form-group id="exampleInputGroup1"
                     label-for="name">
-        <b-form-label class="form-label" for="name" >
+        <b-form-group class="form-label" for="name" >
           Name:
-        </b-form-label>
+        </b-form-group>
 
-        <b-form-input class="form-field" name="name" id="name" v-model="Email.name"/>
-         </b-form-group>
+          <b-form-input class="form-field" name="name" id="name" v-validate="'required|min:2'" v-model="Email.name"/>
+          <span class="error">{{ errors.first('name') }}</span>
+      </b-form-group>
 
-    <b-form-group
-                    label-for="email"
-                    description="We'll never share your email with anyone else.">
+    <b-form-group label-for="email" description="We'll never share your email with anyone else.">
 
-        <b-form-label class="form-label" for="email">
+        <b-form-group class="form-label" for="email">
           Email:
-        </b-form-label>
-        <b-form-input class="form-field" name="email" id="email" v-model="Email.email" v-validate="'required|email'"/>
-        <!-- <span>{{ errors.first('email') }}</span> -->
-      </b-form-group>
+        </b-form-group>
+        <b-form-input class="form-field" name="email" id="email" v-model="Email.email" v-validate = "'required|email'"/>
+        <span class="error">{{ errors.first('email') }}</span>
+    </b-form-group>
+    <b-form-group label-for="firstname">
+        <b-form-group class="form-label" for="message">
+          Firstname
+        </b-form-group>
+        <b-form-input class="form-field" name="firstname" id="firstname" v-validate="'required|min:2'" v-model="Email.firstname" />
+         <span class="error">{{ errors.first('firstname') }}</span>
+    </b-form-group>
       <b-form-group label-for="firstname">
-        <b-form-label class="form-label" for="message">
-          firstname
-        </b-form-label>
-        <b-form-input class="form-field" name="nickname" id="nickname" v-model="Email.firstname" />
-      </b-form-group>
-      <b-form-group label-for="firstname">
-        <b-form-label class="form-label" for="message">
-          society:
-        </b-form-label>
-        <b-form-input class="form-field" name="society" id="society" v-model="Email.society" />
-      </b-form-group>
-    </b-form>
-          <b-btn size="sm" class="float-right" block variant="outline-primary" @click="addToApi ">
+        <b-form-group class="form-label" for="message">
+          Society:
+        </b-form-group>
+        <b-form-input class="form-field" name="society" id="society" v-validate="'required|min:2'" v-model="Email.society" />
+         <span class="error">{{ errors.first('society') }}</span>
+    </b-form-group>
+        <b-btn size="sm" class="float-right" block variant="outline-primary" type="submit" @click="addToApi ">
            Send
-         </b-btn>
+        </b-btn>
 
-         <b-btn size="sm" class="float-right" block variant="outline-danger" @click="hideModal">
+        <b-btn size="sm" class="float-right" block variant="outline-danger" @click="hideModal">
            Close
-         </b-btn>
+        </b-btn>
+    </b-form>
+
 
 
   </b-modal>
@@ -67,13 +69,13 @@
 <script>
 import Vue from 'vue'
 import { mapState, mapActions, mapMutations } from 'vuex'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
+/* import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css' */
 /* import 'bootstrap-vue/dist/bootstrap-vue.css' */
 import axios from 'axios'
 import VueMoment from 'vue-moment'
 import * as moment from 'moment'
-import VeeValidate from 'vee-validate'
+import VeeValidate, { Validator } from 'vee-validate'
 
 export default {
   inject: ['$validator'],
@@ -145,3 +147,8 @@ export default {
 </script>
 
 
+<style scoped>
+.error {
+  color: red;
+}
+</style>

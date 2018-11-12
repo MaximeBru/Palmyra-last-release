@@ -243,6 +243,12 @@
     <!-- end of template -->
   </div>
 </template>
+<script>
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+export default {}
+</script>
+
 <style scoped>
 body {
   box-sizing: content-box;
