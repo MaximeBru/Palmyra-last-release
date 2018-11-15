@@ -6,7 +6,7 @@
             <div id="hero">
 
 
-              <div class="hero-holder" :style="{ 'background-image': 'url(http://localhost:1337' + info.image.url + ')' }">
+              <div class="hero-holder" :style="{ 'background-image': 'url(http://109.13.149.252/' + info.image.url + ')' }">
 
                 <div class="hero-footer">
                   <h6>{{$moment( info.date ).format('DD')}} {{$moment( info.date ).format('MMMM')}}</h6>
@@ -63,7 +63,7 @@ export default {
   }, */
   asyncData({ params }, callback) {
     axios
-      .get(`http://localhost:1337/infos/${params.id}`)
+      .get(`http://109.13.149.252/infos/${params.id}`)
       .then(res => {
         callback(null, { info: res.data })
       })
@@ -137,7 +137,7 @@ export default {
   bottom: -43px;
   background: #f5f4f0;
   font-weight: 100;
-  font-size: 68px;
+  font-size: 62px;
   padding: 0 30px;
   letter-spacing: 2px;
   position: absolute;
@@ -148,7 +148,7 @@ export default {
 .hero-footer h6 {
   bottom: 0;
   padding: 13px 20px;
-  height: 80px;
+  height: 76px;
   background: #1d1d1d;
   color: #868375;
   text-transform: uppercase;
@@ -156,8 +156,8 @@ export default {
   font-weight: normal;
   letter-spacing: 3px;
   display: inline-block;
-  margin-left: 0;
-  margin-top: 36.5%;
+  margin-left: 1px;
+  margin-top: 42.5%;
 }
 /*end of header*/
 /*main*/

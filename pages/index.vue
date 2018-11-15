@@ -193,7 +193,7 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
     <section class="SecNews">
       <h2 class="NewsTilte">Palmyra News</h2>
       <figure v-for="info in infos.slice(0, 4)" :key="info.id" class="snip1208">
-          <img :src="'http://localhost:1337' + info.image.url" alt="sample66" />
+          <img :src="'http://109.13.149.252' + info.image.url" alt="sample66" />
           <div class="date"><span class="day">{{$moment( info.date ).format('DD')}}</span><span class="month">{{$moment( info.date ).format('MMM')}}</span></div><i :class="info.logo.code"></i>
           <figcaption>
             <h3>{{ info.title }}</h3>
@@ -705,7 +705,7 @@ export default {
     } */
   },
   async created() {
-    const res = await axios('http://localhost:1337/infos')
+    const res = await axios('http://109.13.149.252/infos')
     console.log('res', res)
     this.$store.commit('initial', res.data)
   },

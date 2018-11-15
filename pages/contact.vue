@@ -105,7 +105,7 @@ export default {
       }
       console.log('newemail', newEmail)
       axios
-        .post('http://localhost:1337/emails', newEmail)
+        .post('http://109.13.149.252/emails', newEmail)
         .then(respone => {
           console.log(response)
         })
