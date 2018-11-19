@@ -39,7 +39,7 @@ export default {
     ]
   },
   async created() {
-    const res = await axios('http://109.13.149.252/infos')
+    const res = await axios('https://www.digital-dev.fr/infos')
     console.log('res', res)
     this.$store.commit('initial', res.data)
   },

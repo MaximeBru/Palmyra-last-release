@@ -105,7 +105,7 @@ export default {
       }
       console.log('newemail', newEmail)
       axios
-        .post('http://109.13.149.252/emails', newEmail)
+        .post('https://www.digital-dev.fr/emails', newEmail)
         .then(respone => {
           console.log(response)
         })

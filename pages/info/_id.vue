@@ -6,7 +6,7 @@
             <div id="hero">
 
 
-              <div class="hero-holder" :style="{ 'background-image': 'url(http://109.13.149.252/' + info.image.url + ')' }">
+              <div class="hero-holder" :style="{ 'background-image': 'url(https://www.digital-dev.fr/' + info.image.url + ')' }">
 
                 <div class="hero-footer">
                   <h6>{{$moment( info.date ).format('DD')}} {{$moment( info.date ).format('MMMM')}}</h6>
@@ -63,7 +63,7 @@ export default {
   }, */
   asyncData({ params }, callback) {
     axios
-      .get(`http://109.13.149.252/infos/${params.id}`)
+      .get(`https://www.digital-dev.fr/infos/${params.id}`)
       .then(res => {
         callback(null, { info: res.data })
       })
