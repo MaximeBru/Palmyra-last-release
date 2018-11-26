@@ -704,20 +704,28 @@ export default {
       script: [{ src: '/js/slider.js' }]
     } */
   },
-  async created() {
-    const res = await axios('https://www.digital-dev.fr/infos')
-    console.log('res', res)
-    this.$store.commit('initial', res.data)
+  async fetch({store, params}) {
+    return axios.get('https://www.digital-dev.fr/infos')
+   /*  console.log('logo', res) */
+/*     this.$store.commit('initial', res.data) */
+    .then((res) => {
+      store.commit('infos', res.data);
+
+    })
   },
+
   computed: {
     ...mapState({
       infos: state => state.infos,
       list: state => state.list,
-      imageUrl: state => state.infos.image.Url
+      imageUrl: state => state.infos.image.Url,
+      info: state => state.info,
+      initial: state => state.infos,
+      logo: state => state.infos.logo,
     })
   },
   methods: {
-    ...mapMutations(['get_infos', 'set', 'increment', 'reset'])
+    ...mapMutations(['infos', 'set', 'increment', 'reset', 'info','initial','logo'])
   },
   components: {}
 }

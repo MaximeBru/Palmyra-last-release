@@ -1,12 +1,14 @@
 const state = () => ({
   count: 0,
   list: [],
-  info: {},
+  info: [],
   infos: [],
   page_nb: 0,
   page_prev: 0,
   page_next: 0,
-  marker_pos: []
+  marker_pos: [],
+  initial: [],
+  logo: {}
 })
 
 const mutations = {
@@ -22,18 +24,21 @@ const mutations = {
   reset(state) {
     state.count = 0
   },
-  get_info(state, data) {
+  info(state, data) {
     state.info = data
   },
 
-  get_infos(state, data) {
-    state.infos = data
+  infos: (state, infos) => {
+    state.infos = infos
   },
   setCurrentinfo: (state, info) => {
     state.info = info
   },
   get_imageUrl(state, data) {
     state.info.image.url = data
+  },
+  logo: (state, infos) => {
+    state.infos.logo = infos.logo
   }
 }
 
