@@ -74,6 +74,7 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
+    '@nuxtjs/component-cache',
     ['bootstrap-vue/nuxt', { css: false }],
     '@nuxtjs/moment',
     [
