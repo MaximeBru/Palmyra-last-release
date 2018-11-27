@@ -1,30 +1,25 @@
 <template>
-    <section class="section">
-        <div class="container">
-
-          <section class="InterwiewHeader">
-            <div id="hero">
-
-
-              <div class="hero-holder" :style="{ 'background-image': 'url(https://www.digital-dev.fr/' + info.image.url + ')' }">
-
-                <div class="hero-footer">
-                  <h6>{{$moment( info.date ).format('DD')}} {{$moment( info.date ).format('MMMM')}}</h6>
-                  <h1>{{info.title }}</h1>
-                </div>
-              </div>
+  <section class="section">
+    <div>
+      <section class="InterwiewHeader">
+        <div id="hero">
+          <div
+            class="hero-holder"
+            :style="{ 'background-image': 'url(https://www.digital-dev.fr/' + info.image.url + ')' }"
+          >
+            <div class="hero-footer">
+              <h6>{{$moment( info.date ).format('DD')}} {{$moment( info.date ).format('MMMM')}}</h6>
+              <h1>{{info.title }}</h1>
             </div>
-
-          </section>
-<section class="InterwiewContent">
-
-  <p>{{info.newsBody}}</p>
-  <i :class="info.logo.code"></i>
-
-</section>
-
+          </div>
         </div>
-    </section>
+      </section>
+      <section class="InterwiewContent">
+        <p>{{info.newsBody}}</p>
+        <i :class="info.logo.code"></i>
+      </section>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -157,7 +152,7 @@ export default {
   letter-spacing: 3px;
   display: inline-block;
   margin-left: 1px;
-  margin-top: 42.5%;
+  margin-top: 38.4%;
 }
 /*end of header*/
 /*main*/
