@@ -3,6 +3,7 @@
     <Mynavigation/>
     <nuxt/>
     <Myfooter/>
+    <!-- Les Coockies sont à la fin du footer -->
     <!--==================footer part==============  -->
     <!-- integration du Live-chat -->
     <script type="text/javascript">
