@@ -64,6 +64,7 @@ module.exports = {
     { src: '~/plugins/aos', ssr: false },
     { src: '~plugins/vee-validate.js', ssr: true },
     { src: '~plugins/vue-cookie-law.js', ssr: false }
+    /* { src: '~plugins/crisp.js', ssr: false } */
   ],
 
   /*
