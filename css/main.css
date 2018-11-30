@@ -1847,6 +1847,7 @@ figure.snip1208.hover button {
 }
 .arrow-container a {
   text-decoration: none;
+  color: black;
 }
 .arrow-container a:hover {
   color: #eb456e;
@@ -1866,6 +1867,7 @@ figure.snip1208.hover button {
   margin-left: 2rem;
   position: absolute;
   font-size: 2rem;
+  margin-top: -2px;
 }
 
 @keyframes bounce-right {
