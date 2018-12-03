@@ -42,14 +42,14 @@ p {
 }
 .TopTitle {
   position: absolute;
-  top: 27%;
-  left: 36.5%;
+  top: 33% !important;
+  left: 31.5% !important;
   background-color: white;
-  font-size: 2.8rem;
+  font-size: 2.8rem !important;
   /* padding: 1.5rem; */
-  padding-top: 0.5rem;
-  padding-left: 2.5rem;
-  width: 50rem;
+  padding-top: 0.5rem !important;
+  padding-left: 2.5rem !important;
+  width: 50rem !important;
 }
 .TopTitle span {
   font-weight: bold;
@@ -730,9 +730,9 @@ hr {
   font-size: 1rem;
 }
 .iconleft {
-  width: 28%;
+  width: 31%;
   margin-top: -5%;
-  margin-left: 58%;
+  margin-left: 66%;
   margin-bottom: 10rem;
 }
 .iconleft img {
@@ -831,8 +831,9 @@ tr:first-child th:last-child {
   margin-left: -2rem;
 }
 #BenefIcon {
-  margin-left: -16rem;
+  margin-left: -7rem;
   margin-top: -16rem;
+  width: 87%;
 }
 
 .benefitArt {
