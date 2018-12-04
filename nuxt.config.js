@@ -15,8 +15,14 @@ module.exports = {
         content:
           'width=device-width,  initial-scale=0.1, maximum-scale=1, user-scalable=1'
       },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      {
+        hid: 'og:Palmyra',
+        name: 'og:Palmyra',
+        content: 'Palmyra site description'
+      }
     ],
+    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
