@@ -2,7 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
-
+  /*   loading: '~/components/loading.vue', */
   /*
   ** Headers of the page
   */
@@ -52,7 +52,6 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#d83431' },
 
   /*
   ** Global CSS
@@ -126,3 +125,6 @@ module.exports = {
     }
   }
 }
+/* export default {
+  loading: '~/components/loading.vue'
+} */
