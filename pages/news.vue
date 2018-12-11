@@ -38,10 +38,19 @@ export default {
       }
     ]
   },
-  async created() {
+  /* async created() {
     const res = await axios('https://www.digital-dev.fr/infos')
     console.log('res', res)
     this.$store.commit('initial', res.data)
+  }, */
+    async fetch({store, params}) {
+    return axios.get('https://back-office-palmyra.digital-dev.fr/infos')
+   /*  console.log('logo', res) */
+/*     this.$store.commit('initial', res.data) */
+    .then((res) => {
+      store.commit('infos', res.data);
+
+    })
   },
   computed: {
     ...mapState({
