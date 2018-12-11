@@ -193,7 +193,7 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
     <section class="SecNews">
       <h2 class="NewsTilte">Palmyra News</h2>
       <figure v-for="info in infos.slice(0, 4)" :key="info.id" class="snip1208">
-          <img :src="'http://109.13.149.252' + info.image.url" alt="sample66" />
+          <img :src="'https://back-office-palmyra.digital-dev.fr' + info.image.url" alt="sample66" /><!-- 109.13.149.252 -->
           <div class="date"><span class="day">{{$moment( info.date ).format('DD')}}</span><span class="month">{{$moment( info.date ).format('MMM')}}</span></div><i :class="info.logo.code"></i>
           <figcaption>
             <h3>{{ info.title }}</h3>
@@ -705,7 +705,7 @@ export default {
     } */
   },
   async fetch({store, params}) {
-    return axios.get('https://www.digital-dev.fr/infos')
+    return axios.get('https://back-office-palmyra.digital-dev.fr/infos')
    /*  console.log('logo', res) */
 /*     this.$store.commit('initial', res.data) */
     .then((res) => {

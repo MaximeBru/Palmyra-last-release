@@ -3,10 +3,10 @@
   </header>
   <!-- ... -->
 <main>
-  <section class="SecNews">
+  <section class="SecNews" id="PartieNews">
         <h2 class="NewsTilte">Vermeg News</h2>
         <figure v-for="info in infos" :key="info.id" class="snip1208">
-          <img :src="'http://109.13.149.252' + info.image.url" alt="sample66" />
+          <img :src="'https://back-office-palmyra.digital-dev.fr' + info.image.url" alt="sample66" />
           <div class="date"><span class="day">{{$moment( info.date ).format('DD')}}</span><span class="month">{{$moment( info.date ).format('MMM')}}</span></div><i :class="info.logo.code"></i>
           <figcaption>
             <h3>{{ info.title }}</h3>
@@ -39,7 +39,7 @@ export default {
     ]
   },
   async created() {
-    const res = await axios('https://www.digital-dev.fr/infos')
+    const res = await axios('https://back-office-palmyra.digital-dev.fr/infos')
     console.log('res', res)
     this.$store.commit('initial', res.data)
   },
@@ -57,6 +57,9 @@ export default {
 }
 </script>
 <style scoped>
+#PartieNews{
+  height: 150rem;
+}
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.6s;

@@ -39,7 +39,9 @@
           <ul>
             <li>Contact us</li>
             <li>Web chat</li>
-            <li>Open ticket</li>
+            <li>
+              <nuxt-link to="legal-notes">Legal Notes</nuxt-link>
+            </li>
           </ul>
         </div>
         <div class="col social">
@@ -79,6 +81,10 @@
 </template>
 
 <style scoped>
+footer li a {
+  text-decoration: none;
+  color: inherit;
+}
 .CoockieText {
   margin-right: 2rem;
 }

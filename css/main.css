@@ -1696,9 +1696,9 @@ tr:first-child th:last-child {
   display: block;
   width: 100%;
   background-color: #dce6ea;
+  height: 66rem;
   padding-top: 6rem;
   padding-left: 5%;
-  height: 150rem;
 }
 .NewsTilte {
   margin-top: -2rem;
