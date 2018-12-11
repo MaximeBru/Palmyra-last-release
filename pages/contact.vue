@@ -175,6 +175,7 @@ form {
 }
 .title{
       padding-top: 3rem;
+
     margin-left: 22rem;
 }
 

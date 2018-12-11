@@ -1699,6 +1699,7 @@ tr:first-child th:last-child {
   height: 66rem;
   padding-top: 6rem;
   padding-left: 5%;
+  height: 150rem;
 }
 .NewsTilte {
   margin-top: -2rem;
@@ -1716,6 +1717,7 @@ figure.snip1208 {
   margin: 10px 1%;
   min-width: 220px;
   max-width: 310px;
+  min-height: 44rem;
   width: 100%;
   background-color: #ffffff;
   color: #000000;
