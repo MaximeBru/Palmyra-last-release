@@ -54,9 +54,12 @@ export default {
   },
   computed: {
     ...mapState({
-      infos: state => state.infos,
+       infos: state => state.infos,
       list: state => state.list,
-      imageUrl: state => state.infos.image.Url
+      imageUrl: state => state.infos.image.Url,
+      info: state => state.info,
+      initial: state => state.infos,
+      logo: state => state.infos.logo,
     })
   },
   methods: {
