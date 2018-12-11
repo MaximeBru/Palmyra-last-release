@@ -199,7 +199,7 @@ top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
             <h3>{{ info.title }}</h3>
             <p>{{ info.description || 'No description provided.' }}</p>
             <button>Read More</button>
-          </figcaption></figcaption><a :href="'info/' + info.id"></a>
+          </figcaption><a :href="'info/' + info.id"></a>
         </figure>
       <div class="arrow-container">
         <a :href="'news/'">
